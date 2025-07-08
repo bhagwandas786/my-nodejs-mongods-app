@@ -1,0 +1,9 @@
+services:
+  node-mongo-app:
+    container_name: node-mongo-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5000"
+    restart: always
